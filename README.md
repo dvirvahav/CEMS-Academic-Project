@@ -9,11 +9,13 @@ Semester period that included 3 phases:
 
 Project plan:
 We used scrum methodology & managed our project using ToDoList tool.
-1.	Create Use Case model, create project management plan & acceptance testing plan. 
+1.	
+Create Use Case model, create project management plan & acceptance testing plan. 
 
 2.	
 •	Create activity, class, sequence & package diagrams using visual paradigm.
 •	Build a prototype using OCSF framework for the client-server operation.
+
 3.	
 •	Build the system using java & JavaFx.
 •	Document using JavaDoc.
