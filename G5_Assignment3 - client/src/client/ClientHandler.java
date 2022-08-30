@@ -40,7 +40,8 @@ public class ClientHandler extends AbstractClient {
 	 * @param clientUI The interface type variable.
 	 */
 
-	public ClientHandler(String host, int port) throws IOException {
+	public ClientHandler(String host, int port) throws IOException 
+	{
 		super(host, port); // Call the superclass constructor
 // in order to check if there is a connection.
 		openConnection();
