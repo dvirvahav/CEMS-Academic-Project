@@ -42,8 +42,7 @@ public class ClientHandler extends AbstractClient {
 
 	public ClientHandler(String host, int port) throws IOException 
 	{
-		super(host, port); // Call the superclass constructor
-// in order to check if there is a connection.
+		super(host, port); // Call the superclass constructor in order to check if there is a connection.
 		openConnection();
 	}
 
@@ -54,7 +53,8 @@ public class ClientHandler extends AbstractClient {
 	 *
 	 * @param msg The message from the server.
 	 */
-	public void handleMessageFromServer(Object msg) {
+	public void handleMessageFromServer(Object msg) 
+	{
 		System.out.println("--> handleMessageFromServer");
 		returnMessage = msg;
 
@@ -70,7 +70,8 @@ public class ClientHandler extends AbstractClient {
 	 * @param message The message from the UI.
 	 */
 
-	public void handleMessageFromClientUI(Object message) {
+	public void handleMessageFromClientUI(Object message) 
+	{
 		try {
 			openConnection();// in order to send more than one message
 			awaitResponse = true;
@@ -93,7 +94,8 @@ public class ClientHandler extends AbstractClient {
 	/**
 	 * This method terminates the client.
 	 */
-	public void quit() {
+	public void quit() 
+	{
 		try {
 			closeConnection();
 		} catch (IOException e) {

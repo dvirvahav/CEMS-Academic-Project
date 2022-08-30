@@ -132,19 +132,25 @@ public class CheckAndApproveExamTeacherController implements Initializable {
 	 * @author Or Steiner
 	 */
 	@FXML
-	void nextBtnClicked(ActionEvent event) {
+	void nextBtnClicked(ActionEvent event) 
+	{
 		ArrayList<String> errorLog = new ArrayList<String>();
 		StudentExam SE = studentExamTableView.getSelectionModel().getSelectedItem();
-		if (SE == null) {
+		if (SE == null) 
+		{
 			errorLog.add("A Stuent exam must be selected in order to proceed");
 			SpecialCalls.callErrorFrame(errorLog);
-		} else {
+		} 
+		else 
+		{
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(window.CheckAndApproveGrade.toString()));
 			Parent root = null;
-			try {
+			try 
+			{
 				root = loader.load();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			} 
+			catch (IOException e) 
+			{
 				e.printStackTrace();
 			}
 
